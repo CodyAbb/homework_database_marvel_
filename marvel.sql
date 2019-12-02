@@ -34,6 +34,7 @@ INSERT INTO people (name) VALUES ('Sigurd Watt');
 INSERT INTO people (name) VALUES ('Silvia Simonassi');
 INSERT INTO people (name) VALUES ('Stephen Ramsay');
 INSERT INTO people (name) VALUES ('Steve Vance');
+INSERT INTO people (name) VALUES ('Chris Fraser');
 
 INSERT INTO movies (title, year, show_time) VALUES ('Iron Man', 2008, '18:10');
 INSERT INTO movies (title, year, show_time) VALUES ('The Incredible Hulk', 2008, '16:45');
@@ -55,4 +56,11 @@ INSERT INTO movies (title, year, show_time) VALUES ('Spider-Man: Homecoming', 20
 INSERT INTO movies (title, year, show_time) VALUES ('Thor: Ragnarok', 2017, '21:50');
 INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '19:30');
 
+UPDATE people set name = 'Cody Abbott' WHERE name = 'Cosy Abott';
+DELETE FROM movies WHERE title = 'Batman Begins';
+DELETE FROM people WHERE name = 'James Smith';
+
+
 SELECT * FROM movies;
+SELECT name FROM people;
+SELECT name FROM people WHERE name = 'Olivia Wright';
