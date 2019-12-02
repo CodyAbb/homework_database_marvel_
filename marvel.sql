@@ -61,6 +61,7 @@ UPDATE people SET name = 'Cody Abbott' WHERE name = 'Cosy Abott';
 UPDATE movies SET show_time = '21:25' WHERE id = 7;
 DELETE FROM movies WHERE title = 'Batman Begins';
 DELETE FROM people WHERE name = 'James Smith';
+DELETE FROM movies WHERE id IN (15, 19);
 
 
 SELECT * FROM movies;
